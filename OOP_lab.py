@@ -7,8 +7,8 @@ class Clothing (object):
     self.size = size
     self.make = make
 class Dress (Clothing):
-  def __init__ (self):
-    super (Dress, self).__init__()
+  def __init__ (self, color, size, make):
+    super (Dress, self).__init__(color, size, make)
   def buy_dress(self, make):
     if self.make == 'new':
       return "Price is 1000"
@@ -31,5 +31,7 @@ class Dress (Clothing):
 
 
 clothe = Clothing ('red', 14, 'new')
-short_dress = Dress ('second_hand', 16, 'black')
+short_dress = Dress ('black', 18, 'second_hand')
 
+print (vars (clothe))
+print (vars (short_dress))
