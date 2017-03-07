@@ -28,3 +28,8 @@ class Dress (Clothing):
     else:
       return "Color is available"
 
+
+
+clothe = Clothing ('red', 14, 'new')
+short_dress = Dress ('second_hand', 16, 'black')
+
