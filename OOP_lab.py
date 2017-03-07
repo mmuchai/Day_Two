@@ -1,4 +1,4 @@
-class Clothing (oject):
+class Clothing (object):
   def __init__ (self, color, size, make):
     self.color = color
     self.size = size
@@ -20,8 +20,8 @@ class Dress (Clothing):
       return "Size not available"
   def dress_color (self, color):
     colors_available = [red, black, white, blue, beige]
-      if color not in colors_available:
-        return "Invalid color"
-      else:
-        return "Color is available"
+    if color not in colors_available:
+      return "Invalid color"
+    else:
+      return "Color is available"
 
