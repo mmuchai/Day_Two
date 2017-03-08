@@ -8,14 +8,13 @@ class Car(object):
         self.num_of_wheels = []
 
     def car_doors (self):
-
-        if (self.name=='Porshe' or self.name=='Koenigsegg'):
-
-            self.num_of_doors.append(2)
-            return self.num_of_doors
-        else:
-            self.num_of_doors.append(4)
-            return self.num_of_doors
+        for door in num_of_doors
+            if (self.name=='Porshe' or self.name=='Koenigsegg'):
+                self.num_of_doors.append(2)
+                return self.num_of_doors
+            else:
+                self.num_of_doors.append(4)
+                return self.num_of_doors
     def car_wheels (self):
 
         if self.car_type=='trailer':
